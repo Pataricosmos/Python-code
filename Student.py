@@ -1,0 +1,11 @@
+class student:
+    student_name=input("Enter student name : ")
+    marks=int (input("Enter student marks:  "))
+print("original values")
+print(f"Student Name:{getattr(student, 'student_name')}")
+print(f"Student Marks:{getattr(student, 'marks')}")
+print ("Modified Values")
+setattr(student,'student_name',input("Enter new name: "))
+setattr(student,'marks',int(input("Enter new marks:")))
+print(f"Student Name : {getattr(student,'student_name')}")
+print(f"Student Marks: {getattr(student,'marks')}")
